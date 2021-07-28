@@ -41,6 +41,7 @@ define postfix::file (
     source  => $source,
     ensure  => $ensure,
     notify  => Service['postfix'],
+    require => Package['postfix'],
   }
 
 }

@@ -38,6 +38,7 @@ define postfix::dbfile (
     content => $content,
     source  => $source,
     ensure  => $ensure,
+    require => Package['postfix'],
   }
 
   if $ensure == 'absent' {
