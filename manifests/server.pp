@@ -59,6 +59,9 @@ class postfix::server (
   $smtpd_sasl_path = 'private/auth',
   $smtp_sasl_auth = false,
   $smtp_sasl_password_maps = undef,
+  # sende-dependent relay
+  $smtp_sender_dependent_authentication = false,
+  $sender_dependent_relayhost_maps = undef
   $smtp_sasl_security_options = undef,
   $smtp_tls_CAfile = undef,
   $smtp_tls_CApath = undef,
