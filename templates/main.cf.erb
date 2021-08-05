@@ -752,7 +752,7 @@ smtpd_sasl_path = <%= @smtpd_sasl_path %>
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = <%= @smtp_sasl_password_maps %>
 smtp_sasl_security_options = <%= @smtp_sasl_security_options %>
-<%- if @smtp_sender_dependent_authentication -%>
+<%- if @sender_dependent_relayhost_maps -%>
 smtp_sender_dependent_authentication = yes
 sender_dependent_relayhost_maps = <%= @sender_dependent_relayhost_maps %>
 <% end -%>
